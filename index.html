@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>⚡ Typing Speed Test</title>
+  <link rel="icon" href="favicon.ico" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container intro-screen" id="intro">
+    <h1>⚡ Typing Speed Test</h1>
+    <p>Test your typing speed and accuracy. Are you ready?</p>
+    <button id="startBtn">Start Game</button>
+  </div>
+
+  <div class="container game-screen hidden" id="game">
+    <h2>Type the following text:</h2>
+    <p id="quote"></p>
+    <textarea id="input" placeholder="Start typing here..."></textarea>
+    <div class="stats">
+      <p>⏱ Time: <span id="time">30</span>s</p>
+      <p>💨 WPM: <span id="wpm">0</span></p>
+      <p>🎯 Accuracy: <span id="accuracy">0</span>%</p>
+    </div>
+    <button id="restartBtn">Restart</button>
+  </div>
+
+  <div class="container result-screen hidden" id="result">
+    <h2>🏁 Results</h2>
+    <p>Your Speed: <span id="finalWpm"></span> WPM</p>
+    <p>Your Accuracy: <span id="finalAccuracy"></span>%</p>
+    <button id="tryAgainBtn">Try Again</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
